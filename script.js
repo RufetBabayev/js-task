@@ -177,51 +177,51 @@ let dizel = 5;
 let benzin = 6;
 let lpg = 4;
 
-// let balans = 21;
+let balans = 21;
 
-// let yanacaq = +prompt("yanacaq novunu secin", `${dizel} ${benzin} ${lpg}`);
+let yanacaq = +prompt("yanacaq novunu secin", `${dizel} ${benzin} ${lpg}`);
 
-// let litr = +prompt("nece litr isdeyirsiniz");
+let litr = +prompt("nece litr isdeyirsiniz");
 
-// let tutar = litr * yanacaq;
+let tutar = litr * yanacaq;
 
-// if (tutar > balans) {
-//   alert("sizin kifayet qeder balansiniz yoxdur");
-// } else {
-//   alert(balans - tutar);
-// }
+if (tutar > balans) {
+  alert("sizin kifayet qeder balansiniz yoxdur");
+} else {
+  alert(balans - tutar);
+}
 
-// let msg = `Zehmet olmasa asagidaki yanacaq novlerinden birini secin
-// 1-dizel
-// 2-benzin
-// 3-lpg
-// `;
+let msg = `Zehmet olmasa asagidaki yanacaq novlerinden birini secin
+1-dizel
+2-benzin
+3-lpg
+`;
 
-// let userSelect = prompt(msg);
+let userSelect = prompt(msg);
 
-// let total;
+let total;
 
-// if (userSelect === "2") {
-//   let userLitr = +prompt("nece litr olsun?");
-//   let userBalance = prompt("meblegi daxil edin");
-//   total = userLitr * 6;
-//   if (userBalance >= total) {
-//     alert(userBalance - total + " " + "qaliq mebleg");
-//   } else {
-//     alert(
-//       `sizin balansiniz ${userBalance} catmayan mebleg ${total - userBalance} `
-//     );
-//   }
-// } else if (userSelect === "3") {
-//   total = userLitr * 4;
-//   console.log(total);
-//   if (userBalance >= total) {
-//     alert(userBalance - total + " " + "qaliq mebleg");
-//   } else {
-//     alert(
-//       `sizin mebleginiz ${userBalance} catmayan mebleg ${total - userBalance}`
-//     );
-//   }
-// } else {
-//   alert("3 haldan birini secin");
-// }
+if (userSelect === "2") {
+  let userLitr = +prompt("nece litr olsun?");
+  let userBalance = prompt("meblegi daxil edin");
+  total = userLitr * 6;
+  if (userBalance >= total) {
+    alert(userBalance - total + " " + "qaliq mebleg");
+  } else {
+    alert(
+      `sizin balansiniz ${userBalance} catmayan mebleg ${total - userBalance} `
+    );
+  }
+} else if (userSelect === "3") {
+  total = userLitr * 4;
+  console.log(total);
+  if (userBalance >= total) {
+    alert(userBalance - total + " " + "qaliq mebleg");
+  } else {
+    alert(
+      `sizin mebleginiz ${userBalance} catmayan mebleg ${total - userBalance}`
+    );
+  }
+} else {
+  alert("3 haldan birini secin");
+}
